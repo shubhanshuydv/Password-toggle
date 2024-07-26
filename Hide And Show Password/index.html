@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Toggle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/691995f691.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+   <div class="input-box">
+    <input type="password" name="" id="pass" placeholder="password">
+    <i class="fa-solid fa-eye-slash" id="eyeicon"></i>
+   </div>
+
+   <script>
+
+    let eyeicon = document.getElementById("eyeicon");
+    let pass = document.getElementById("pass");
+
+    eyeicon.onclick = function (){
+        if(pass.type == "password"){
+            pass.type = "text";
+            eyeicon.classList = "fa-solid fa-eye";
+            
+        }
+
+        else{
+            pass.type = "password";
+            eyeicon.classList = "fa-solid fa-eye-slash";
+        }
+    }
+   </script>
+</body>
+</html>

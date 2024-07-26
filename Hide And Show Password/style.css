@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(49, 62, 62);
+}
+
+
+.input-box{
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 300px auto;
+    display: flex;
+    align-items: center;
+}
+.input-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+
